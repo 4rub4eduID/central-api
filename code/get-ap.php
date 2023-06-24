@@ -4,6 +4,7 @@
     font-family: Consolas; }
 </style>
 <h1>Aruba Central API</h1>
+<a href="index.html">Back to Home</a> 
 <p>Input AP's SN and Token</p>
 <form method="post">
     <input type="text" name="sn" placeholder="Enter SN">
