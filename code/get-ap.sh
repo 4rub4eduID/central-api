@@ -1,7 +1,7 @@
 #!/bin/bash
-input_SN=$1
-input_Token=$2
+input_sn=$1
+input_token=$2
 curl --request GET \
-     --url "https://apigw-apaceast.central.arubanetworks.com/configuration/v2/ap_settings/${input_SN}" \
+     --url "https://apigw-apaceast.central.arubanetworks.com/configuration/v2/ap_settings/${input_sn}" \
      --header "accept: application/json" \
-     --header "Authorization: Bearer $(input_Token)"
+     --header "Authorization: Bearer ${input_token}"

@@ -4,6 +4,7 @@ services:
 
   web:
     image: nginx:latest
+    container_name: nginx-webserver
     ports:
       - "8060:80"
 
