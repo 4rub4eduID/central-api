@@ -20,7 +20,7 @@ docker compose up -d
 
 
 
-# Guide
+# guide
 https://developer.arubanetworks.com/aruba-central/docs/api-getting-started
 
 https://developer.arubanetworks.com/aruba-central/reference
