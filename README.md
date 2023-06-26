@@ -8,7 +8,10 @@ aruba central api
 
 api url
 
-or hardcoded token, remove input_token from .sh
+# hardcoded token
+add hardcoded token? 
+
+remove/comment input_token= from .sh and add input_token= to .env
 
 
 # requirements
