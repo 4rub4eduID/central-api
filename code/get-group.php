@@ -1,13 +1,14 @@
 <style>
     html { color-scheme: light dark; }
     body { margin: 50px 50px;
-    font-family: Consolas; }
+    font-family: Consolas; 
+    font-size: 18px; }
 </style>
 <h1>Aruba Central API</h1>
 <a href="index.html">Back to Home</a> 
 <p>Get Group Details<br>Input Token</p>
 <form method="post">
-    <input type="password" name="token" placeholder="Enter Token">
+    <input type="password" name="token" placeholder="Enter Token"><br>
     <input type="submit" value="Submit">
 </form>
 <?php

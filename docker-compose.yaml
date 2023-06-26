@@ -5,6 +5,7 @@ services:
   web:
     image: nginx:latest
     container_name: nginx-webserver
+    restart: always
     ports:
       - "8060:80"
 
@@ -18,5 +19,6 @@ services:
   php:
     image: php:fpm
     container_name: php-webserver
+    restart: always
     volumes:
       - ./code:/code
