@@ -3,21 +3,22 @@ aruba central api
 
 
 
-# edit central-api url
+# edit .env
 ./code/.env
 
+api url
+
+or hardcoded token, remove input_token from .sh
 
 
 # requirements
 any webserver + php
 
 
-
 # if using docker
 edit .env
 
 docker compose up -d
-
 
 
 # guide
