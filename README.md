@@ -15,6 +15,7 @@ any webserver + php
 
 # if using docker
 edit .env
+
 docker compose up -d
 
 
