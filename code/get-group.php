@@ -6,17 +6,14 @@
 </style>
 <h1>Aruba Central API</h1>
 <a href="index.html">Back to Home</a> 
-<p>Get Group Details<br>Input Token</p>
+<p>Get Group Details</p>
 <form method="post">
-    <input type="password" name="token" placeholder="Enter Token"><br>
     <input type="submit" value="Submit">
 </form>
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $input_token = $_POST['token'];
-    $input_token = escapeshellarg($input_token);
     echo "Details:";
-    $output = shell_exec("./get-group.sh $input_token");
+    $output = shell_exec("./get-group.sh");
     echo "<br><pre>$output</pre>";
 }
 ?>

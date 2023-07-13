@@ -1,19 +1,6 @@
 # central-api
 aruba central api
 
-
-
-# edit .env
-./code/.env
-
-api url
-
-# hardcoded token
-add hardcoded token? 
-
-remove/comment input_token= from .sh and add input_token= to .env
-
-
 # requirements
 any webserver + php
 

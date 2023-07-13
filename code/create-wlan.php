@@ -13,7 +13,6 @@
     <input type="text" name="ssid" placeholder="Enter New SSID"><br>
     <input type="password" name="passphrase" placeholder="Enter Passphrase"><br>
     <input type="text" name="vlan" placeholder="Enter VLAN"><br>
-    <input type="password" name="token" placeholder="Enter Token"><br>
     <input type="submit" value="Submit">
 </form>
 <?php
@@ -28,10 +27,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $input_passphrase = escapeshellarg($input_passphrase);
     $input_vlan = $_POST['vlan'];
     $input_vlan = escapeshellarg($input_vlan);
-    $input_token = $_POST['token'];
-    $input_token = escapeshellarg($input_token);
     echo "Details:";
-    $output = shell_exec("./create-wlan.sh $input_group $input_wlan $input_ssid $input_passphrase $input_vlan $input_token");
+    $output = shell_exec("./create-wlan.sh $input_group $input_wlan $input_ssid $input_passphrase $input_vlan");
     echo "<br><pre>$output</pre>";
 }
 ?>
