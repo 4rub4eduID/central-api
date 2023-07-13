@@ -3,14 +3,18 @@
     body { margin: 50px 50px;
     font-family: Consolas; 
     font-size: 18px; }
+    .resizedTextbox {font-family: Consolas; 
+    font-size: 18px; width: 300px; }
+    .resizedButton {font-family: Consolas; 
+    font-size: 18px; }
 </style>
 <h1>Aruba Central API</h1>
 <a href="index.html">Back to Home</a> 
 <p>README<br>Input API URL and Token</p>
 <form method="post">
-    <input type="text" name="api_url" placeholder="Enter API URL"><br>
-    <input type="text" name="token" placeholder="Enter Token"><br>
-    <input type="submit" value="Submit">
+    <input type="text" class="resizedTextbox" name="api_url" placeholder="Enter API URL"><br>
+    <input type="text" class="resizedTextbox" name="token" placeholder="Enter Token"><br>
+    <input type="submit" class="resizedButton" value="Submit">
 </form>
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
