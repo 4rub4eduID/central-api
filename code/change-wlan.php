@@ -6,7 +6,7 @@
 </style>
 <h1>Aruba Central API</h1>
 <a href="index.html">Back to Home</a> 
-<p>Change Existing WLAN<br>Input Group, WLAN, New SSID and Token</p>
+<p>Change Existing WLAN<br>Input Group, WLAN, New SSID</p>
 <form method="post">
     <input type="text" name="group" placeholder="Enter Group"><br>
     <input type="text" name="wlan" placeholder="Enter Existing WLAN"><br>

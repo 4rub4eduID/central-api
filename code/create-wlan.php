@@ -6,7 +6,7 @@
 </style>
 <h1>Aruba Central API</h1>
 <a href="index.html">Back to Home</a> 
-<p>Create New WLAN<br>Input Group, WLAN, SSID, Passphrase, VLAN and Token</p>
+<p>Create New WLAN<br>Input Group, WLAN, SSID, Passphrase, VLAN</p>
 <form method="post">
     <input type="text" name="group" placeholder="Enter Group"><br>
     <input type="text" name="wlan" placeholder="Enter New WLAN"><br>

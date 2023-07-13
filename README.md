@@ -1,6 +1,11 @@
 # central-api
 aruba central api
 
+# create .env
+touch .env
+chmod 777 .env
+
+
 # requirements
 any webserver + php
 

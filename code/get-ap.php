@@ -6,7 +6,7 @@
 </style>
 <h1>Aruba Central API</h1>
 <a href="index.html">Back to Home</a> 
-<p>Get AP Details<br>Input AP's SN and Token</p>
+<p>Get AP Details<br>Input AP's SN</p>
 <form method="post">
     <input type="text" name="sn" placeholder="Enter SN"><br>
     <input type="submit" value="Submit">
