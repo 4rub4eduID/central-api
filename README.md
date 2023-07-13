@@ -2,8 +2,8 @@
 aruba central api
 
 # create .env
-touch .env
-chmod 777 .env
+touch code/.env
+chmod 777 code/.env
 
 
 # requirements
