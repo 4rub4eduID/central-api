@@ -2,17 +2,17 @@
 aruba central api
 
 
+# requirements
+any webserver + php
+
+
 # create .env
 touch code/.env
 
 chmod 777 code/.env
 
 
-# requirements
-any webserver + php
-
-
-# if using docker
+# docker compose
 docker compose up -d
 
 
