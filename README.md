@@ -1,6 +1,7 @@
 # central-api
 aruba central api
 
+
 # create .env
 touch code/.env
 chmod 777 code/.env
@@ -11,8 +12,6 @@ any webserver + php
 
 
 # if using docker
-edit .env
-
 docker compose up -d
 
 
