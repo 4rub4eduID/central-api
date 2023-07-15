@@ -1,22 +1,34 @@
 <style>
-    html { color-scheme: light dark; }
-    body { margin: 50px 50px;
-    font-family: Consolas; 
-    font-size: 18px; }
-    .resizedTextbox {font-family: Consolas; 
-    font-size: 18px; width: 300px; }
-    .resizedButton {font-family: Consolas; 
-    font-size: 18px; }
+    html {
+        color-scheme: light dark;
+    }
+
+    body {
+        margin: 50px 50px;
+        font-family: Consolas;
+        font-size: 18px;
+    }
+
+    .resizedTextbox {
+        font-family: Consolas;
+        font-size: 18px;
+        width: 300px;
+    }
+
+    .resizedButton {
+        font-family: Consolas;
+        font-size: 18px;
+    }
 </style>
 <h1>Aruba Central API</h1>
-<a href="index.html">Back to Home</a> 
+<a href="index.html">Back to Home</a>
 <p>Get AP Details<br>Input AP's SN</p>
 <form method="post">
     <input type="text" class="resizedTextbox" name="sn" placeholder="Enter SN"><br>
     <input type="submit" class="resizedButton" value="Submit">
 </form>
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $input_sn = $_POST['sn'];
     $input_sn = escapeshellarg($input_sn);
     echo "Details:";
@@ -24,4 +36,3 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo "<br><pre>$output</pre>";
 }
 ?>
-
