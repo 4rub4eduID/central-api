@@ -27,6 +27,7 @@
     <input type="text" class="resizedTextbox" name="group" placeholder="Enter Group"><br>
     <input type="text" class="resizedTextbox" name="wlan" placeholder="Enter Existing WLAN"><br>
     <input type="text" class="resizedTextbox" name="ssid" placeholder="Enter New SSID"><br>
+    <input type="password" class="resizedTextbox" name="passphrase" placeholder="Enter New Passphrase"><br>
     <input type="submit" class="resizedButton" value="Submit">
 </form>
 <?php
@@ -37,8 +38,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $input_wlan = escapeshellarg($input_wlan);
     $input_ssid = $_POST['ssid'];
     $input_ssid = escapeshellarg($input_ssid);
+    $input_passphrase = $_POST['passphrase'];
+    $input_passphrase = escapeshellarg($input_passphrase);
     echo "Details:";
-    $output = shell_exec("./change-wlan.sh $input_group $input_wlan $input_ssid");
+    $output = shell_exec("./change-wlan.sh $input_group $input_wlan $input_ssid $input_passphrase");
     echo "<br><pre>$output</pre>";
 }
 ?>
