@@ -14,7 +14,8 @@ curl --request PATCH \
   "wlan": {
     "type": "employee",
     "essid": "'$input_ssid'",
-    "wpa_passphrase": "'$input_passphrase'"
+    "wpa_passphrase": "'$input_passphrase'",
+        "wpa_passphrase_changed": true
   }
 }
 '
