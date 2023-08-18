@@ -18,7 +18,7 @@ curl --request POST \
     "vlan": "'$input_vlan'",
     "wpa_passphrase": "'$input_passphrase'",
     "wpa_passphrase_changed": true,
-        "access_rules": [
+    "access_rules": [
       {
         "action": "allow"
       }

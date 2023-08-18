@@ -15,7 +15,12 @@ curl --request PATCH \
     "type": "employee",
     "essid": "'$input_ssid'",
     "wpa_passphrase": "'$input_passphrase'",
-        "wpa_passphrase_changed": true
+    "wpa_passphrase_changed": true,
+    "access_rules": [
+      {
+        "action": "allow"
+      }
+    ]
   }
 }
 '
