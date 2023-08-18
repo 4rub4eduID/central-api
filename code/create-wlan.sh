@@ -15,8 +15,14 @@ curl --request POST \
   "wlan": {
     "type": "employee",
     "essid": "'$input_ssid'",
+    "vlan": "'$input_vlan'",
     "wpa_passphrase": "'$input_passphrase'",
-    "vlan": "'$input_vlan'"
+    "wpa_passphrase_changed": true,
+        "access_rules": [
+      {
+        "action": "allow"
+      }
+    ]
   }
 }
 '
