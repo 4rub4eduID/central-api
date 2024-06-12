@@ -1,5 +1,6 @@
 #!/bin/bash
 source ./.env
+source ./.auth
 input_group=$1
 input_wlan=$2
 input_ssid=$3
